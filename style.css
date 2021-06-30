@@ -1,0 +1,119 @@
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #C7A6BC;
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    
+    
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+   
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: #B281A2;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #fff;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+ background-color: #64184A;
+    color: #fff;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #64184A;
+    border-radius: 50px;
+    margin-left: 45%;
+  }
+  
+  .controls {
+    
+    height: 551px;
+    weight:441px;
+    background-color: #F5CDFC;
+    border-radius: 45px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .controls h1{
+    text-align: center;
+    color: #64184A;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 40px;
+  }
+  .controls p{
+    color: #64184A;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.6;
+  }
+  .controls ul {
+    padding-left: 100px;
+  }
+  .controls ul li{
+   
+    color: black;
+    font-size: 14px;
+  }
+  .controls input{
+background-color: #64184A;
+color: #fff;
+border-radius: 50px;
+border: none;
+margin-left: 35%;
+padding: 10px 40px;
+
+  }
+  .score{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+  }
